@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Meu Vídeo do YouTube</title>
+  <style>
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+  </style>
+</head>
 <body>
 
-<h1>The iframe element + CSS</h1>
-<br>
-    <p>Fernanda</p>
-    <a href="index.html" title="Minha página">Página 1</a>
-<br>
-<p>An iframe with default borders:</p>
-<iframe src="https://www.youtube.com/watch?v=ejeYfeF1mzA" width="100%" height="300">
-</iframe>
+<h1>O iframe com vídeo do YouTube</h1>
 
+<p>Fernanda</p>
+<a href="index.html" title="Minha página">Página 1</a>
+
+<br><br>
+
+<iframe 
+  src="https://www.youtube.com/embed/ejeYfeF1mzA" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 </body>
 </html>
