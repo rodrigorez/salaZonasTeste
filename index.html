@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-box color="green" position="0 2 -4" rotation="0 45 45" width="2" depth="3" height="2">
+
+        </a-box>
+        <a-entity environment="preset: japan; dressingAmount: 25" visible="">
+            <a-entity class="environment" position="" light="" visible="">
+            </a-entity>
+                <a-entity class="environment" position="" light="" visible="">
+            </a-entity>
+            <a-entity rotation="" class="environmentGround environment" visible="" scale="" shadow="">
+            </a-entity>
+            <a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7"></a-light>
+<a-light type="spot" intensity="0.5" distance="50" decay="2" position="0 3 0" light="castShadow: true"></a-light>
+            <a-icosahedron 
+            color="blue" 
+            position="0.5 5.5 -2" 
+            radius="1.5" 
+            animation="property: components.material.material.color; type: color; to: red; loop: true; dir: alternate; dur: 5000;"
+            link="href: pagina1.html; title: galeria; target: _blank">
+        </a-icosahedron>
+        </a-entity>
+        <a-sky radius="200" theta-length="110" class="environment" material="" visible="" geometry=""
+                scale=""></a-sky>
+                <a-entity cursor="rayOrigin: mouse" raycaster="objects: [link], [clickable]"></a-entity>
+            </a-entity>
+    </a-scene>
+</body>
+
+</html>
